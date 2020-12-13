@@ -109,9 +109,15 @@ def show
 end
 25. $ rails s
 26. Test with Postman, here are some screenshots
-27. $ heroku login
-28. $ git init
-29. $ git add .
-30. $ git commit -m "initial commit"
-28. $ heroku create
-29. $ git push heroku main
+
+At this point the api is in place can be seen here:
+
+
+
+https://www.youtube.com/watch?v=5gu-hzfhv10
+
+https://devcenter.heroku.com/articles/getting-started-with-rails6
+
+https://hero-api-56790.herokuapp.com/villains
+
+https://hero-api-56790.herokuapp.com/
