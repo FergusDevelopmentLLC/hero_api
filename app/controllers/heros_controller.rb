@@ -30,7 +30,7 @@ class HerosController < ApplicationController
     # else
     #   render json: @hero.errors, status: :unprocessable_entity
     # end
-    render json: "No updates allowed"
+    render json: 'No updates allowed'
   end
 
   # DELETE /heros/1
