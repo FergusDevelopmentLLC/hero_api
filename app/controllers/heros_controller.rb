@@ -25,11 +25,12 @@ class HerosController < ApplicationController
 
   # PATCH/PUT /heros/1
   def update
-    if @hero.update(hero_params)
-      render json: @hero
-    else
-      render json: @hero.errors, status: :unprocessable_entity
-    end
+    # if @hero.update(hero_params)
+    #   render json: @hero
+    # else
+    #   render json: @hero.errors, status: :unprocessable_entity
+    # end
+    render json: "No updates allowed"
   end
 
   # DELETE /heros/1
