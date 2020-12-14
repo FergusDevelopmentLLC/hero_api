@@ -25,20 +25,16 @@ class VillainsController < ApplicationController
 
   # PATCH/PUT /villains/1
   def update
-    render :json 'No updates allowed'
-    # no updates allowed
-    # if @villain.update(villain_params)
-    #   render json: @villain
-    # else
-    #   render json: @villain.errors, status: :unprocessable_entity
-    # end
+    if @villain.update(villain_params)
+      render json: @villain
+    else
+      render json: @villain.errors, status: :unprocessable_entity
+    end
   end
 
   # DELETE /villains/1
   def destroy
-    render :json 'No deletes allowed'
-    # no deletes allowe
-    # @villain.destroy
+    @villain.destroy
   end
 
   private

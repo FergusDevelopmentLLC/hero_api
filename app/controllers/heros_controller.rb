@@ -25,18 +25,16 @@ class HerosController < ApplicationController
 
   # PATCH/PUT /heros/1
   def update
-    render :json 'No updates allowed'
-    # if @hero.update(hero_params)
-    #   render json: @hero
-    # else
-    #   render json: @hero.errors, status: :unprocessable_entity
-    # end
+    if @hero.update(hero_params)
+      render json: @hero
+    else
+      render json: @hero.errors, status: :unprocessable_entity
+    end
   end
 
   # DELETE /heros/1
   def destroy
-    render :json 'No deletes allowed'
-    #@hero.destroy
+    @hero.destroy
   end
 
   private
