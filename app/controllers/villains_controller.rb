@@ -45,6 +45,6 @@ class VillainsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def villain_params
-      params.require(:villain).permit(:name, :hero_id)
+      params.require(:villain).permit(:name, :hero_id, :img_url)
     end
 end
