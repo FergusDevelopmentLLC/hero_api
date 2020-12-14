@@ -45,6 +45,6 @@ class HerosController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def hero_params
-      params.require(:hero).permit(:name)
+      params.require(:hero).permit(:name, :img_url)
     end
 end
