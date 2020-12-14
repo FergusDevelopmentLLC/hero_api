@@ -35,7 +35,8 @@ class HerosController < ApplicationController
 
   # DELETE /heros/1
   def destroy
-    @hero.destroy
+    # @hero.destroy
+    render json: 'No deletes allowed'
   end
 
   private
